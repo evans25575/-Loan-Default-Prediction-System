@@ -1,186 +1,122 @@
-# 💸 Loan Default Prediction System
+# ðŸ›¡ï¸ Loan Guard AI
+### Intelligent Credit Risk Scoring for Digital Lenders & Microfinance Institutions
 
-An end-to-end machine learning project designed to help microfinance institutions, SACCOs, and digital lenders predict the likelihood of loan default based on customer financial and demographic data. Built using **Python**, **Streamlit**, and **Plotly**, this project showcases ML modeling, explainability, and real-time deployment.
-
----
-
-## 📌 Problem Statement
-
-Loan defaults significantly impact the financial sustainability of microfinance institutions. Traditional manual assessments are time-consuming and often subjective. This system enables **automated, consistent, and explainable credit risk assessment**, reducing bad loans and increasing operational efficiency.
-
----
-
-## 📊 Key Features
-
-- 🧾 **Interactive Web App** – Predict loan default risk using real-time user inputs.
-- 🧠 **Model Explainability** – Uses SHAP for interpreting model decisions.
-- 📈 **Visual Analytics Dashboard** – Built-in Plotly-based insights.
-- ⚙️ **Clean Modular Code** – Structured for production, extension, and scalability.
+[![Live App](https://img.shields.io/badge/ðŸš€%20LIVE%20APP-Launch%20Loan%20Guard%20AI-006BA6?style=for-the-badge)](https://3v5yyiiskavaufqjdjckgn.streamlit.app/)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://3v5yyiiskavaufqjdjckgn.streamlit.app/)
+[![XGBoost](https://img.shields.io/badge/XGBoost-Model-FF6600?style=flat-square)](https://xgboost.readthedocs.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 ---
 
-## 🧠 Machine Learning Workflow
+## ðŸ”— Try It Live
 
-### 📍 Data Preprocessing
-- Handle missing values
-- Detect and treat outliers
-- Feature engineering (e.g., debt-to-income ratio, loan-to-asset ratio)
+> **ðŸ‘‰ [https://3v5yyiiskavaufqjdjckgn.streamlit.app/](https://3v5yyiiskavaufqjdjckgn.streamlit.app/)**
 
-### 🤖 Model Training
-- Algorithms: **XGBoost**, **Random Forest**, **LightGBM**
-- Evaluation Metrics: **Confusion Matrix**, **ROC-AUC**, **Precision-Recall Curve**
-
-### 📌 Model Explainability
-- SHAP values for local and global interpretation
-- Transparency in credit decision-making
+No setup required. Enter customer financial data and get an instant credit risk prediction with full explainability.
 
 ---
 
-## 🚀 Deployment
+## ðŸ“Œ Overview
 
-- Frontend: **Streamlit**
-- Realtime inference from user inputs
-- Visual insights with **Plotly**
+**Loan Guard AI** is an end-to-end machine learning system that predicts the likelihood of loan default based on customer financial and demographic data. Designed for microfinance institutions, SACCOs, and digital lenders operating in emerging markets where traditional credit bureau data is limited or unavailable.
 
----
-
-## 📂 Project Structure
-
-Loan-Default-Prediction-System/ ├── data/               # Raw and processed datasets ├── notebooks/          # EDA and model training notebooks ├── models/             # Trained ML models (pickle files) ├── streamlit_app.py    # Streamlit dashboard script ├── requirements.txt    # Python dependencies └── README.md           # Project documentation
+Built with Python, XGBoost, LightGBM, SHAP, and Streamlit â€” from raw data to deployed, explainable predictions.
 
 ---
 
-## 🛠️ Tech Stack
+## ðŸ’¼ Business Impact
 
-| Category             | Tools/Frameworks                         |
-|----------------------|------------------------------------------|
-| Programming Language | Python                                   |
-| ML Libraries         | Pandas, Scikit-learn, XGBoost, LightGBM  |
-| Explainability       | SHAP                                     |
-| Visualization        | Plotly                                   |
-| Interface            | Streamlit                                |
-| Version Control      | Git + GitHub                             |
-| Optional Add-ons     | Docker, MLflow, SQL/NoSQL                |
+| Metric | Result |
+|---|---|
+| ðŸ“‰ Reduction in Non-Performing Loans (NPLs) | **15â€“30% estimated** |
+| â±ï¸ Time saved per day on manual risk review | **2â€“4 hours** |
+| âš¡ Inference speed | **Real-time (sub-second)** |
+| ðŸ¦ Target institutions | Microfinance, SACCOs, Digital Lenders |
 
 ---
 
-## 💼 Business Value & Use Case
+## ðŸ§  Machine Learning Workflow
 
-### 📊 Business Impact
+### 1. Data Preprocessing
+- Handle missing values and detect/treat outliers
+- Feature engineering: **debt-to-income ratio**, **loan-to-asset ratio**, repayment history signals
 
-This system directly addresses operational challenges faced by lenders by optimizing loan approval through data-driven credit risk scoring:
+### 2. Model Training
+| Algorithm | Type | Use |
+|---|---|---|
+| XGBoost | Gradient Boosting | Primary classifier |
+| LightGBM | Gradient Boosting | Speed-optimised variant |
+| Random Forest | Ensemble | Baseline comparison |
 
-- ✅ **15–30% Reduction in Non-Performing Loans (NPLs)**  
-  Identify high-risk applicants pre-disbursement to minimize defaults.
+### 3. Evaluation
+- Confusion Matrix
+- ROC-AUC Curve
+- Precision-Recall Curve
 
-- ✅ **2–4 Hours Saved Per Day in Manual Risk Review**  
-  Automates time-consuming loan assessments.
+### 4. Explainability â€” SHAP
+- **Global**: Which features most influence default risk across all customers?
+- **Local**: Why did *this specific customer* get a high-risk score?
+- Critical for regulatory transparency and loan officer trust
 
-- ✅ **Faster, Consistent Loan Decisions at Scale**  
-  Eliminates inconsistencies in subjective judgment.
-
-- ✅ **Extendable for Future Use Cases**  
-  Enables segmentation, dynamic retraining, and performance tracking.
-
----
-
-### 🏦 Target Users
-
-This system is designed for the following stakeholders:
-
-- **Credit Officers** – Receive instant risk feedback for applicants.
-- **Loan Committees** – Reference model insights during vetting.
-- **Risk Analysts / Data Teams** – Monitor model performance, retrain periodically.
-- **Branch / Portfolio Managers** – Track risk exposure and lending health.
-- **Product Teams / Developers** – Integrate predictions into digital platforms.
+### 5. Deployment
+- **Frontend**: Streamlit interactive web app
+- **Inference**: Real-time predictions from user inputs
+- **Visualisation**: Plotly-powered analytics dashboard
 
 ---
 
-### ⚠️ Model Assumptions & Limitations
+## ðŸ“Š Key Features
 
-- **Input Bias** – Heavily reliant on structured financial data (e.g., income, assets); underrepresents informal earners.
-- **No External Credit Data** – CRB scores or third-party credit history not yet integrated.
-- **Static Model** – Based on historical data; performance may degrade without retraining.
-- **No Fairness or Compliance Layer** – Does not enforce regulatory or ethical constraints (e.g., gender/race bias).
-
-> 🧠 **Recommendation**: For real-world use, integrate this model into a loan management system, set up performance monitoring, and retrain with updated data quarterly.
+- ðŸ§¾ **Interactive Web App** â€” Enter applicant data, get instant risk prediction
+- ðŸ§  **Model Explainability** â€” SHAP values for transparent credit decisions
+- ðŸ“ˆ **Visual Analytics Dashboard** â€” Risk distribution, NPL trends, ROC curves
+- âš™ï¸ **Modular, Production-Ready Code** â€” Structured for extension and scaling
 
 ---
 
-## 📸 Visual Insights
+## ðŸ“‚ Project Structure
 
-### 📉 Estimated Reduction in Non-Performing Loans (NPL)
-
-```python
-import plotly.graph_objects as go
-
-fig = go.Figure(data=[
-    go.Bar(name='Before ML Model', x=['NPL Rate'], y=[0.28], marker_color='crimson'),
-    go.Bar(name='After ML Model', x=['NPL Rate'], y=[0.17], marker_color='seagreen')
-])
-fig.update_layout(
-    title='📉 Estimated Reduction in Non-Performing Loans (NPL)',
-    yaxis=dict(title='NPL Rate', tickformat=".0%"),
-    barmode='group'
-)
-fig.show()
-
+```
+Loan-Guard-AI/
+â”œâ”€â”€ models/                  # Trained ML models (.pkl files)
+â”œâ”€â”€ streamlit_app.py         # Main Streamlit dashboard
+â”œâ”€â”€ train_model.py           # Model training pipeline
+â”œâ”€â”€ loan_default_model.pkl   # Serialised production model
+â”œâ”€â”€ requirements.txt         # Python dependencies
+â””â”€â”€ README.md
+```
 
 ---
 
-📊 Risk Category Distribution
+## ðŸ› ï¸ Tech Stack
 
-import plotly.express as px
-
-labels = ['Low Risk', 'Medium Risk', 'High Risk']
-values = [220, 130, 50]
-
-fig = px.pie(
-    names=labels, 
-    values=values, 
-    title='📊 Distribution of Predicted Loan Risk Categories',
-    color_discrete_sequence=px.colors.sequential.RdBu
-)
-fig.update_traces(textposition='inside', textinfo='percent+label')
-fig.show()
-
+| Category | Tools |
+|---|---|
+| Language | Python 3.10+ |
+| ML Libraries | scikit-learn, XGBoost, LightGBM, pandas, numpy |
+| Explainability | SHAP |
+| Visualisation | Plotly |
+| Interface | Streamlit |
+| Version Control | Git + GitHub |
+| Optional | Docker, MLflow |
 
 ---
 
-📈 ROC Curve
+## âš ï¸ Model Assumptions & Limitations
 
-from sklearn.metrics import roc_curve, roc_auc_score
-import matplotlib.pyplot as plt
+- **Input Bias** â€” Relies on structured financial data; may underrepresent informal earners
+- **No External Credit Data** â€” CRB scores not yet integrated (planned)
+- **Static Model** â€” Recommend quarterly retraining with fresh repayment data
+- **No Fairness Layer** â€” Regulatory/ethical constraints (gender, age bias) not yet enforced
 
-fpr, tpr, _ = roc_curve(y_test, y_proba)
-auc = roc_auc_score(y_test, y_proba)
-
-plt.figure(figsize=(6, 5))
-plt.plot(fpr, tpr, label=f'AUC = {auc:.2f}', color='navy')
-plt.plot([0, 1], [0, 1], linestyle='--', color='gray')
-plt.xlabel('False Positive Rate')
-plt.ylabel('True Positive Rate')
-plt.title('📈 ROC Curve - Loan Default Model')
-plt.legend(loc='lower right')
-plt.grid()
-plt.show()
-
+> ðŸ§  **For production use:** Integrate into a loan management system, add performance monitoring, and retrain quarterly.
 
 ---
 
-🧠 SHAP Feature Importance
+## ðŸš€ Run Locally
 
-import shap
-
-explainer = shap.Explainer(model)
-shap_values = explainer(X_train)
-shap.summary_plot(shap_values, X_train)
-
-
----
-
-🚀 How to Run
-
+```bash
 # 1. Clone the repo
 git clone https://github.com/evans25575/-Loan-Default-Prediction-System.git
 cd Loan-Default-Prediction-System
@@ -188,23 +124,34 @@ cd Loan-Default-Prediction-System
 # 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Run the app
+# 3. Launch the app
 streamlit run streamlit_app.py
+```
 
-Then open http://localhost:8501 in your browser.
-
-
----
-
-👨‍💻 Author
-
-Evans Kiplangat
-🌐 Portfolio Website
-🐙 GitHub
-
+Then open **http://localhost:8501** in your browser.
 
 ---
 
-📜 License
+## ðŸ¦ Who Is This For?
 
-MIT License
+| Stakeholder | How They Use It |
+|---|---|
+| Credit Officers | Instant risk feedback per applicant |
+| Loan Committees | Data-driven insights during vetting |
+| Risk Analysts | Monitor model performance, trigger retraining |
+| Portfolio Managers | Track portfolio-level risk exposure |
+| Product/Dev Teams | Integrate predictions into digital platforms |
+
+---
+
+## ðŸ‘¨â€ðŸ’» Author
+
+**Evans Kiplangat** â€” Data Scientist | Credit & Risk Modelling
+
+ðŸŒ [Portfolio](https://evans25575.github.io/Evans---portfolio-/) &nbsp;|&nbsp; ðŸ™ [GitHub](https://github.com/evans25575) &nbsp;|&nbsp; ðŸ“§ kiplaevans2018@gmail.com
+
+---
+
+## ðŸ“œ License
+
+MIT License â€” free to use, modify, and distribute with attribution.
