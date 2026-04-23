@@ -1,7 +1,7 @@
 # 🛡️ Loan Guard AI
 ### Intelligent Credit Risk Scoring for Digital Lenders & Microfinance Institutions
 
-[![Live App](https://img.shields.io/badge/🚀%20LIVE%20APP-Launch%20Loan%20Guard%20AI-006BA6?style=for-the-badge)](https://3v5yyiiskavaufqjdjckgn.streamlit.app/)
+[![Live App](https://img.shields.io/badge/🚀%30Click%20Here%20LIVE%20APP-Launch%20Loan%20Guard%20AI-006BA6?style=for-the-badge)](https://3v5yyiiskavaufqjdjckgn.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://3v5yyiiskavaufqjdjckgn.streamlit.app/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-Model-FF6600?style=flat-square)](https://xgboost.readthedocs.io/)
